@@ -10,11 +10,16 @@ class ProductController extends BaseController {
     }
     public function insertProduct(){
         $data = [
-            'nama_product' => 'Melon',
-            'description' => 'Buah - buahan'
+            'nama_product' => $this->request->getPost('nama_product'),
+            'description' => $this->request->getPost('description')
         ];
-
+        
         $this->product->insertProductORM($data);
+        return redirect()->to(base_url('products'));
+
+    }
+    public function insertPage(){
+        return view('insert_product');
     }
 
     public function readProduct(){

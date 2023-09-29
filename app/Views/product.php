@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Data Products</h1>
+    <button><a href="/insertproducts">Tambah Produk</a></button>
+
     <table border="1" cellpadding ="10">
         <thead>
             <tr>
@@ -14,6 +16,7 @@
                 <th>Nama Product</th>
                 <th>Deskripsi</th>
                 <th>Action</th>
+
             </tr>
         </thead>
         <tbody>
